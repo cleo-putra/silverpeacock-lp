@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@css/*": ["./public/assets/css/*"],
+      "@plugins/*": ["./public/assets/plugins/css/*"]
+    }
+  }
+}

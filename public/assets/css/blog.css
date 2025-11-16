@@ -1,0 +1,188 @@
+/*================================================================================================
+    Start Blog CSS
+===================================================================================================*/
+@import url("reset.css");
+@import url("mobile-menu.css");
+@import url("global-header.css");
+@import url("breadcrumbs.css");
+@import url("call-action.css");
+@import url("footer.css");
+
+/* Blog  */
+.bx-blog__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.bx-blog__card {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  align-items: center;
+  transition: all 0.3s ease;
+  background: var(--bx-white-color);
+  border: 1px solid rgba(34, 48, 53, 0.25);
+}
+.bx-blog__card:hover {
+  background: #f0f0f0;
+  border: 1px solid transparent;
+}
+.bx-blog__cover {
+  min-width: 306px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.bx-blog__cover img {
+  max-width: 306px;
+  border-radius: 8px;
+}
+.bx-blog__card:hover .bx-blog__cover img {
+  transform: scale(1.04);
+}
+.bx-blog__meta .category {
+  padding: 12px 20px;
+  border-radius: 57px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 12px;
+  color: var(--bx-title-color);
+  display: inline-block;
+  border: 1px solid rgba(34, 48, 53, 0.25);
+}
+.bx-blog__meta .category:hover {
+  border: 1px solid transparent;
+  background: var(--bx-primary-color);
+  color: var(--bx-white-color);
+}
+.bx-blog__meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.bx-blog__meta .date {
+  color: var(--bx-title-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.bx-blog__content .title {
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 400;
+}
+.bx-blog__content .title a {
+  font-weight: 400;
+  line-height: 40px;
+  color: var(--bx-title-color);
+}
+.bx-blog__content .title a:hover {
+  text-decoration: underline;
+}
+.bx-blog__content .text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  color: var(--bx-paragraph-color);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .bx-blog__card {
+    display: block;
+  }
+  .bx-blog__cover img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .bx-blog__content {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .bx-blog__wrapper {
+    display: grid;
+    margin-top: 20px;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bx-blog__cover {
+    min-width: 100%;
+    width: 100%;
+  }
+  .bx-blog__card {
+    display: block;
+    min-width: 100%;
+    width: 100%;
+    padding: 24px;
+  }
+  .bx-blog__cover img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .bx-blog__content .title {
+    margin-bottom: 9px;
+    font-size: 22px;
+  }
+  .bx-blog__content .title a {
+    line-height: 32px;
+  }
+  .bx-blog__content .text {
+    line-height: 25px;
+  }
+  .bx-blog__meta .category {
+    padding: 8px 12px;
+    line-height: 11px;
+  }
+  .bx-blog__content {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bx-blog__wrapper {
+    display: grid;
+    margin-top: 20px;
+    gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bx-blog__cover {
+    min-width: 100%;
+    width: 100%;
+  }
+  .bx-blog__cover img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .bx-blog__card {
+    display: block;
+    min-width: 100%;
+    width: 100%;
+    padding: 24px;
+  }
+  .bx-blog__content .title {
+    margin-bottom: 9px;
+    font-size: 22px;
+  }
+  .bx-blog__content .title a {
+    line-height: 32px;
+  }
+  .bx-blog__content .text {
+    line-height: 25px;
+  }
+  .bx-blog__meta .category {
+    padding: 8px 12px;
+    line-height: 11px;
+  }
+  .bx-blog__content {
+    margin-top: 32px;
+  }
+}
+
+/*================================================================================================
+    End Blog CSS
+===================================================================================================*/

@@ -1,0 +1,323 @@
+/*================================================================================================
+    Start Preview CSS
+===================================================================================================*/
+@import url("reset.css");
+
+.bx-container {
+  max-width: 1500px;
+}
+
+/* Header  */
+.header {
+  padding: 22px 0px;
+  position: absolute;
+  width: 100%;
+  z-index: 101010;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-action .bx-btn {
+  background: var(--bx-title-color);
+  border-radius: 12px;
+  padding: 14px 32px;
+  color: var(--bx-white-color);
+}
+.header-action .bx-btn:hover {
+  background: var(--bx-primary-color);
+}
+
+/* Hero  */
+.hero {
+  position: relative;
+  padding-top: 216px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+.hero-pattern-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+}
+.hero-pattern-shape .pattern-1 {
+  position: absolute;
+  left: 0;
+  top: -54px;
+}
+.hero-pattern-shape .pattern-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero-brand-shape {
+  position: absolute;
+  right: -76px;
+  bottom: 0;
+  z-index: -1;
+}
+.hero-content .title {
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 112px;
+  letter-spacing: -1.8px;
+  margin: 0;
+  margin-top: 60px;
+}
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 48px;
+}
+.hero-actions .bx-btn {
+  padding: 16px 44px;
+}
+
+/* Preview Demo  */
+.preview-demo {
+  padding: 120px 0px;
+}
+.preview-demo-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.demo-head {
+  position: relative;
+  overflow: hidden;
+}
+.demo-img img {
+  border-radius: 6px;
+}
+.demo-actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.demo-card:hover .demo-actions {
+  opacity: 1;
+  visibility: visible;
+}
+.demo-actions .bx-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 34px;
+  transition: all 0.4s ease;
+  position: absolute;
+  min-width: 187px;
+}
+.demo-actions .top-btn {
+  transform: translateY(0);
+  opacity: 0;
+  visibility: hidden;
+}
+.demo-actions .bottom-btn {
+  transform: translateY(0);
+  opacity: 0;
+  visibility: hidden;
+}
+.demo-card:hover .demo-actions .top-btn {
+  transform: translateY(-120%);
+  opacity: 1;
+  visibility: visible;
+}
+.demo-card:hover .demo-actions .bottom-btn {
+  transform: translateY(120%);
+  opacity: 1;
+  visibility: visible;
+}
+.demo-text p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.22px;
+  color: var(--bx-title-color);
+  margin-top: 32px;
+}
+
+/* Inner Page Showcase  */
+.inner-page-main {
+  background-color: #223035;
+  padding: 120px 0px;
+  border-radius: 16px;
+}
+.inner-page-wrapper {
+  margin-top: 70px;
+}
+.swiper.inner-page-slider-reverse {
+  margin: 30px 0px;
+}
+.inner-page-showcase .swiper-slide {
+  width: auto !important;
+}
+.inner-page-showcase .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.inner-page-sectin-head .title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.88px;
+  margin-bottom: 24px;
+}
+.inner-page-sectin-head .text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  padding: 0px 52px;
+}
+
+/* Call Action  */
+.call-action {
+  padding: 120px 0px;
+}
+.call-action-content .title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.88px;
+  margin-bottom: 16px;
+}
+.call-action-content .text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  padding: 0px 80px;
+}
+.call-action-content .bx-btn {
+  margin-top: 40px;
+  background: #82b541;
+  padding: 20px 46px;
+}
+.call-action-content .bx-btn:hover {
+  background: var(--bx-title-color);
+}
+.call-action-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
+}
+.call-action-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--bx-title-color);
+}
+.call-action-features li i {
+  color: #82b541;
+  position: relative;
+  top: 2px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-content .title {
+    font-size: 48px;
+    line-height: 140%;
+  }
+  .preview-demo-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .inner-page-sectin-head .title {
+    font-size: 38px;
+  }
+  .call-action-content .text {
+    padding: 0px 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-logo img {
+    max-width: 132px;
+  }
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 56px;
+  }
+  .header-action .bx-btn {
+    padding: 8px 16px !important;
+  }
+  .hero-content .title {
+    font-size: 32px;
+    line-height: 140%;
+    margin-top: 24px;
+  }
+  .hero-actions {
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .preview-demo {
+    padding: 56px 0px;
+  }
+  .preview-demo-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .inner-page-main {
+    padding: 56px 0px;
+  }
+  .inner-page-sectin-head .title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .inner-page-sectin-head .text {
+    line-height: 26px;
+  }
+  .inner-page-wrapper {
+    margin-top: 40px;
+  }
+  .inner-page-single img {
+    max-height: 140px;
+  }
+  .call-action {
+    padding: 56px 0px;
+  }
+  .call-action-content .title {
+    font-size: 32px;
+  }
+  .call-action-content .text {
+    padding: 0;
+  }
+  .call-action-content .bx-btn {
+    margin-top: 24px;
+  }
+  .call-action-features {
+    gap: 12px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .preview-demo-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+
+/*================================================================================================
+    End Preview CSS
+===================================================================================================*/

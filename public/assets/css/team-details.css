@@ -1,0 +1,325 @@
+/*================================================================================================
+    Start Team Details CSS
+===================================================================================================*/
+@import url("reset.css");
+@import url("mobile-menu.css");
+@import url("global-header.css");
+@import url("breadcrumbs.css");
+@import url("call-action.css");
+@import url("footer.css");
+
+.team-details-inner {
+  display: flex;
+  align-items: center;
+  gap: 94px;
+}
+.team-details-thumb img {
+  max-width: 700px;
+  border-radius: 8px;
+}
+.team-details-content .name {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.team-details-content .desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+}
+.team-details-progress {
+  margin-top: 70px;
+}
+.progress-item {
+  margin-bottom: 40px;
+}
+.progress-item:last-child {
+  margin: 0;
+}
+.progress-item__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.progress-item__title,
+.progress-item__percentage {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--bx-title-color);
+}
+.progress-container,
+.progress {
+  border-radius: 500px;
+  position: relative;
+  height: 6px;
+  width: 100%;
+  border: 1px solid var(--bx-primary-color);
+  border-radius: 12px;
+}
+.progress {
+  background-color: var(--bx-primary-color);
+  width: 0;
+  transition: width 0.4s linear;
+  height: 6px;
+  top: -1px;
+  left: 0;
+}
+.percentage {
+  font-size: 0px;
+  position: absolute;
+  left: 0;
+  transition: left 0.4s linear;
+}
+
+.team-details-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 56px;
+  margin-top: 40px;
+  max-width: 500px;
+}
+.team-details-info li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  color: var(--bx-title-color);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.team-details-info li span {
+}
+.team-details-info li a,
+.team-details-info li span {
+  font-weight: 400;
+}
+
+.team-details-social-list {
+  margin-top: 50px;
+}
+.team-details-social-list li {
+  display: inline-block;
+  margin-right: 14px;
+}
+.team-details-social-list li:last-child {
+  margin: 0;
+}
+.team-details-social-list li a {
+  width: 60px;
+  height: 60px;
+  line-height: 66px;
+  text-align: center;
+  border: 1px solid rgba(133, 166, 166, 0.2);
+  border-radius: 100%;
+  font-size: 20px;
+  color: var(--bx-title-color);
+}
+.team-details-social-list li a:hover {
+  background: var(--bx-primary-color);
+  color: var(--bx-white-color);
+}
+.team-details-bottom {
+  display: flex;
+  gap: 140px;
+  margin-top: 72px;
+}
+.team-details-biography {
+  max-width: 916px;
+}
+.team-details-biography h4 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+  margin-bottom: 24px;
+}
+.team-details-biography p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+}
+.team-details-biography ul {
+  margin: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.team-details-biography ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--bx-title-color);
+}
+.team-details-biography ul li i {
+  color: var(--bx-primary-color);
+  position: relative;
+  top: 2px;
+}
+
+.team-details-form {
+  border-radius: 8px;
+  background: #f0f0f0;
+  padding: 40px;
+}
+.team-details-form h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+  margin: 0;
+}
+.team-details-form-main {
+  margin-top: 48px;
+}
+.team-details-form-main .form-group {
+  margin-bottom: 24px;
+}
+.team-details-form-main .form-group input,
+.team-details-form-main .form-group textarea {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(34, 48, 53, 0.17);
+  background-color: transparent;
+  color: var(--bx-title-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  border-radius: 8px;
+}
+.team-details-form-main .form-group input:focus,
+.team-details-form-main .form-group textarea:focus {
+  border: 1px solid var(--bx-primary-color);
+}
+.team-details-form-main .form-group textarea {
+  height: 132px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .team-details-thumb img {
+    max-width: 600px;
+  }
+  .team-details-inner {
+    gap: 80px;
+  }
+  .team-details-content .name {
+    font-size: 42px;
+  }
+  .team-details-bottom {
+    gap: 80px;
+  }
+  .team-details-biography {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .team-details-thumb img {
+    max-width: 499px;
+  }
+  .team-details-biography {
+    max-width: 540px;
+  }
+  .team-details-inner {
+    align-items: flex-start;
+    gap: 60px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .team-details-bottom,
+  .team-details-inner {
+    display: block;
+  }
+  .team-details-content .name {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  .team-details-form {
+    margin-top: 40px;
+  }
+  .team-details-content {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .team-details-bottom,
+  .team-details-inner {
+    display: block;
+  }
+  .team-details-thumb img {
+    max-width: 100%;
+  }
+  .team-details-content .name {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .team-details-content .desc {
+    line-height: 28px;
+  }
+  .team-details-progress {
+    margin-top: 40px;
+  }
+  .progress-item__title,
+  .progress-item__percentage {
+    font-size: 16px;
+  }
+  .team-details-info {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+  .team-details-social-list {
+    margin-top: 24px;
+  }
+  .team-details-social-list li a {
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    font-size: 16px;
+  }
+  .team-details-social-list li {
+    margin-right: 8px;
+  }
+  .team-details-biography h4 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .team-details-biography p {
+    line-height: 26px;
+  }
+  .team-details-biography ul {
+    margin: 24px 0px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+  .team-details-biography ul li {
+    gap: 12px;
+    font-size: 16px;
+  }
+  .team-details-form {
+    padding: 24px;
+    margin-top: 40px;
+  }
+  .team-details-form h3 {
+    font-size: 24px;
+  }
+  .team-details-form-main {
+    margin-top: 32px;
+  }
+  .team-details-content {
+    margin-top: 24px;
+  }
+}
+/*================================================================================================
+    End Team Details CSS
+===================================================================================================*/

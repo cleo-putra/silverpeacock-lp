@@ -1,0 +1,97 @@
+/*================================================================================================
+    Start Service CSS
+===================================================================================================*/
+@import url("reset.css");
+@import url("mobile-menu.css");
+@import url("global-header.css");
+@import url("breadcrumbs.css");
+@import url("call-action.css");
+@import url("footer.css");
+
+/* Service  */
+.bx-service {
+  overflow: hidden;
+}
+.bx-service__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px 35px;
+}
+.bx-service .bx-section-head {
+  gap: 40px;
+}
+.bx-service .bx-section-head__info {
+  max-width: 636px;
+}
+.bx-service .bx-section-head__info.two {
+  max-width: 480px;
+}
+.bx-service .bx-section-head__text {
+  color: var(--bx-title-color);
+  margin: 0;
+}
+.bx-service .bx-section-head__btn {
+  margin-top: 32px;
+}
+.owl-carousel.bx-features__slider {
+  padding-left: 176px;
+  margin-top: 50px;
+}
+.bx-service__item {
+  position: relative;
+}
+.bx-service__item .service-img {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.service-img img {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.bx-service__item:hover .service-img img {
+  transform: scale(1.04);
+}
+.service-content {
+  margin-top: 30px;
+}
+.service-content span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+  color: var(--bx-paragraph-color);
+  display: block;
+}
+.service-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0;
+  margin-top: 10px;
+  color: var(--bx-title-color);
+}
+.service-content h4:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .bx-service__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bx-service__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+  .service-content {
+    margin-top: 24px;
+  }
+}
+
+/*================================================================================================
+    End Service CSS
+===================================================================================================*/

@@ -1,0 +1,438 @@
+/*================================================================================================
+    Start Service CSS
+===================================================================================================*/
+@import url("reset.css");
+@import url("mobile-menu.css");
+@import url("global-header.css");
+@import url("breadcrumbs.css");
+@import url("call-action.css");
+@import url("footer.css");
+
+/* Service  */
+.bx-service__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.bx-service__card {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid rgba(34, 48, 53, 0.17);
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+.bx-service__card:hover {
+  border: 1px solid transparent;
+}
+.bx-service__card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 16, 21, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.bx-service__card:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.bx-service__cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bx-service__img {
+  overflow: hidden;
+  border-radius: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.bx-service__card:hover .bx-service__img {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  transform: scale(0.5);
+}
+.bx-service__img img {
+  max-width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.bx-service__card .bx-service__icon {
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  max-width: 125px;
+  height: 125px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.bx-service__card:hover .bx-service__icon {
+  opacity: 1;
+  visibility: visible;
+}
+.bx-service__card .bx-service__icon img {
+  transform: scale(0.5);
+}
+.bx-service__card:hover .bx-service__icon img {
+  transform: scale(1);
+}
+.bx-service__number {
+  color: #85a6a6;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.bx-service__card:hover .bx-service__number {
+  color: var(--bx-white-color);
+}
+
+.bx-service__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.bx-service__card:hover .bx-service__image {
+  opacity: 1;
+  visibility: visible;
+}
+.bx-service__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.bx-service__card:hover .bx-service__image img {
+  transform: scale(1.04);
+}
+.bx-service__content {
+  position: relative;
+  margin-top: 162px;
+  z-index: 3;
+}
+.bx-service__content .title {
+  font-size: 26px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+  color: var(--bx-title-color);
+}
+.bx-service__card:hover .bx-service__content .title {
+  color: var(--bx-white-color);
+}
+.bx-service__content .text {
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.bx-service__card:hover .bx-service__content .text {
+  color: var(--bx-white-color);
+}
+
+/* Work Process  */
+.bx-work-process {
+  overflow: hidden;
+}
+.bx-work-process__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 116px;
+  padding-left: 485px;
+}
+.w-process-card {
+  position: relative;
+}
+.w-process-card.card-1 {
+  margin-top: 190px;
+}
+.w-process-card.card-2 {
+  margin-top: 115px;
+}
+.w-process-card.card-3 {
+  margin-top: 45px;
+}
+.w-process-card.process-icon::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/icons/process-line.svg");
+  width: 312px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: -96px;
+  background-position: center;
+  top: -21px;
+  z-index: -1;
+}
+.w-process-card .process-number {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border: 1px solid var(--bx-title-color);
+  border-radius: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--bx-title-color);
+  transition: all 0.3s ease;
+}
+.w-process-card:hover .process-number {
+  background: var(--bx-primary-color);
+  color: var(--bx-white-color);
+  border: 1px solid transparent;
+}
+.w-process-card .process-content {
+  margin-top: 42px;
+}
+.w-process-card .process-content .title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+.w-process-card .process-content .text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+}
+.bx-work-process__shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bx-work-process__arrow {
+  position: absolute;
+  left: 115px;
+  top: 32%;
+}
+.bx-work-process__shape .shape-1 {
+  position: absolute;
+  right: 175px;
+  top: 5%;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .w-process-card.process-icon::before {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  /* Service  */
+  .bx-service__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Work Progress  */
+  .bx-work-process__wrapper {
+    padding-left: 350px;
+    gap: 80px;
+  }
+  .bx-work-process__arrow {
+    left: 0px;
+    top: 350px;
+    transform: scale(0.85);
+  }
+  .w-process-card.card-1 {
+    margin-top: 160px;
+  }
+  .w-process-card.card-2 {
+    margin-top: 95px;
+  }
+  .w-process-card.card-3 {
+    margin-top: 35px;
+  }
+  .w-process-card.process-icon::before {
+    width: 260px;
+    right: -80px;
+  }
+  .bx-work-process__shape .shape-1 {
+    right: 120px;
+  }
+  .bx-work-process__shape .shape-2 {
+    right: -20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Service  */
+  .bx-service__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bx-service__content {
+    margin-top: 60px;
+  }
+  .bx-service__content .title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    line-height: 140%;
+  }
+  .bx-service__img img {
+    max-width: 116px;
+    height: 116px;
+  }
+
+  /* Work Progress  */
+  .bx-work-process__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+    gap: 40px;
+    margin-top: 60px;
+  }
+  .w-process-card.card-1,
+  .w-process-card.card-2,
+  .w-process-card.card-3 {
+    margin-top: 0;
+  }
+  .w-process-card.process-icon::before {
+    display: none;
+  }
+  .bx-work-process__arrow {
+    display: none;
+  }
+  .w-process-card .process-number {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 22px;
+  }
+  .w-process-card .process-content {
+    margin-top: 25px;
+  }
+  .w-process-card .process-content .title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .w-process-card .process-content .text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .bx-work-process__shape .shape-1 {
+    right: 50px;
+    top: 80px;
+    max-width: 120px;
+  }
+  .bx-work-process__shape .shape-2 {
+    right: -20px;
+    bottom: 40px;
+    max-width: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Service  */
+  .bx-service__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+  }
+  .bx-service__content {
+    margin-top: 32px;
+  }
+  .bx-service__content .title {
+    margin-bottom: 12px;
+    line-height: 120%;
+    font-size: 18px;
+  }
+  .bx-service__card {
+    padding: 24px;
+  }
+  .bx-service__img img {
+    max-width: 100px;
+    height: 100px;
+  }
+  .bx-service__card .bx-service__icon {
+    left: 24px;
+    top: 24px;
+    max-width: 100px;
+    height: 100px;
+  }
+
+  /* Work Progress  */
+  .bx-work-process__wrapper {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .w-process-card.card-1,
+  .w-process-card.card-2,
+  .w-process-card.card-3 {
+    margin-top: 0;
+  }
+  .w-process-card.process-icon::before {
+    display: none;
+  }
+  .bx-work-process__arrow {
+    display: none;
+  }
+  .w-process-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .w-process-card .process-number {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+  }
+  .w-process-card .process-content {
+    margin-top: 20px;
+  }
+  .w-process-card .process-content .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .w-process-card .process-content .text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .bx-work-process__shape .shape-1,
+  .bx-work-process__shape .shape-2 {
+    max-width: 60px;
+  }
+
+  .bx-work-process__shape .shape-1 {
+    right: 20px;
+    top: 60px;
+  }
+
+  .bx-work-process__shape .shape-2 {
+    right: -10px;
+    bottom: 30px;
+  }
+}
+
+/*================================================================================================
+    End Service CSS
+===================================================================================================*/

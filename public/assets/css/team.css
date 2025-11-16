@@ -1,0 +1,114 @@
+/*================================================================================================
+    Start Team CSS
+===================================================================================================*/
+@import url("reset.css");
+@import url("mobile-menu.css");
+@import url("global-header.css");
+@import url("breadcrumbs.css");
+@import url("call-action.css");
+@import url("footer.css");
+
+/* Team  */
+.bx-team__shape {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 145px;
+}
+.bx-team__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 30px;
+}
+.bx-team__head {
+  position: relative;
+  overflow: hidden;
+}
+.bx-team__img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bx-team__img img {
+  width: 100%;
+  border-radius: 8px;
+}
+.bx-team__card:hover .bx-team__img img {
+  transform: scale(1.04);
+}
+.bx-team__social {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.bx-team__card:hover .bx-team__social {
+  bottom: 30px;
+}
+.bx-team__social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.bx-team__social li a {
+  width: 42px;
+  height: 42px;
+  background: var(--bx-white-color);
+  border-radius: 100%;
+  line-height: 44px;
+  text-align: center;
+  color: var(--bx-title-color);
+}
+.bx-team__social li a:hover {
+  color: var(--bx-white-color);
+  background: var(--bx-primary-color);
+}
+.bx-team__social li:last-child {
+  margin: 0;
+}
+
+.bx-team__content {
+  margin-top: 32px;
+}
+.bx-team__content .name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+.bx-team__content .designation {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.36px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .bx-team__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bx-team__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bx-team__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .bx-team__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+
+/*================================================================================================
+    End Team CSS
+===================================================================================================*/
