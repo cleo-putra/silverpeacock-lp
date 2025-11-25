@@ -1,11 +1,11 @@
 import Contact from "@/components/Contact";
 import { CTA5 } from "@/components/CTA";
-import PageBanner from "@/components/PageBanner";
+import ServiceBanner from "@/components/ServiceBanner";
 import BexpartLayout from "@/layout/BexpartLayout";
 const page = () => {
   return (
     <BexpartLayout header={2} footer={1} customCssFile="contact.css">
-      <PageBanner
+      <ServiceBanner
         pageName="Contact Us"
         pageTitle="Reach Out to Us for Personalized Assistance and Support"
         pageImage="/assets/images/sp/contact-bg.webp"

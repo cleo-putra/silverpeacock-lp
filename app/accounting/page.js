@@ -1,11 +1,11 @@
 import { CTA5 } from "@/components/CTA";
-import PageBanner from "@/components/PageBanner";
+import ServiceBanner from "@/components/ServiceBanner";
 import BexpartLayout from "@/layout/BexpartLayout";
 import Link from "next/link";
 const page = () => {
   return (
     <BexpartLayout header={2} footer={1} customCssFile="service-details.css">
-      <PageBanner
+      <ServiceBanner
         pageName="Service Details"
         pageTitle="Accountant for Tradies"
         pageImage="/assets/images/sp/accounting.jpg"
@@ -52,38 +52,34 @@ const page = () => {
                   </li>
                 </ul>
               </div>
-              {/* Single Widget  */}
-              <div className="sidebar-widget sidebar-banner">
-                <img
-                  src="assets/images/service-details/sidebar-banner.png"
-                  alt="sidebar-banner"
-                />
-                <div className="sidebar-banner__content">
-                  <h4>Let’s Start Your Project Together</h4>
-                  <Link href="contact" className="bx-btn">
-                    Start Your Project <i className="fi-rr-arrow-right" />
-                  </Link>
-                </div>
-              </div>
+             
             </div>
             {/* Main Content  */}
             <div className="service-details__main">
               <div className="service-details__content">
-                <h3>Specialist Accountant for Tradies</h3>
+                <h4>Specialist Accountant for Tradies</h4>
                 <p>
-                 Silver Peacock Pty Ltd works closely with Small Businesses, Construction Developers, Property Builders, and Tradespersons to ensure you are operating your business efficiently.
+                 Silver Peacock Pty Ltd works closely with <b>Small Businesses, Construction Developers, Property Builders,</b> and <b>Tradespersons</b> to ensure you are operating your business efficiently.
 <br/><br/>
-What does it mean to be a specialist tradies accountant? Just like a builder develops their specialist skills in construction over years of experience, so to does Silver Peacock Pty Ltd in ensuring your business performs optimally for your trade. With over 20 years experience managing accounts and bookkeeping for tradies, no other business accountant comes close to achieving the results we do for our clients.
+What does it mean to be a <b>specialist tradies accountant</b>? Just like a builder develops their specialist skills in construction over years of experience, so to does Silver Peacock Pty Ltd in ensuring your business performs optimally for your trade. With over 20 years experience managing accounts and bookkeeping for tradies, no other business accountant comes close to achieving the results we do for our clients.
 <br/><br/>
-We adopt cloud-based accounting tools & systems such as Xero, MYOB, Freshbooks allowing us to work on your business anytime and anywhere so your business can get the attention, dedication, and commitment it deserves. Adopting this innovation has strengthened client relationships with Silver Peacock Pty Ltd and allowing for more streamlined communication and data accessibility.
+We adopt cloud-based accounting tools & systems such as <b>Xero, MYOB, Freshbooks</b> allowing us to work on your business anytime and anywhere so your business can get the attention, dedication, and commitment it deserves. Adopting this innovation has strengthened client relationships with Silver Peacock Pty Ltd and allowing for more streamlined communication and data accessibility.
 <br/><br/>
-This simply means you will have instant access to your financial information and Silver Peacock Pty Ltd can have real-time tracking of performance indicators as we manage your business compliance and bookkeeping requirements.
+This simply means <b>you will have instant access to your financial information</b> and Silver Peacock Pty Ltd can have real-time tracking of performance indicators as we manage your business compliance and bookkeeping requirements.
                 </p>
      
                 <img
                   src="assets/images/service-details/details-img.png"
                   alt="details-img"
                 />
+
+                <h4>Accounting Tips for Small Businesses, Tradies & Construction Industry</h4>
+                <p><b>“Cash Flow”</b> are two very important words we have found to worry most businesses, especially in the building & construction industry regardless of your scale of economy. Whether you’re expanding your business or funding a development project, the magic words have always been <b>“Cash Flow”</b>.</p>
+                <br/><br/>
+                <p>Silver Peacock Pty Ltd has built a reputation over 20 years working with small businesses, especially in the building and construction industry. We can also guide your <b>small to medium business enterprise</b> in the <b>construction industry, medical & healthcare & Tradesman</b> by identifying and measuring cost drivers that have an influence on and impact the business cash flow.</p>
+                <br/><br/>
+                <p>Understanding and controlling the various cost drivers in the business can help you make a smarter business decision that will accelerate your cash flow. </p>
+
                 <h4>Bookkeeping Services for Small Business & Tradies</h4>
                 <p>
                  Silver Peacock Pty Ltd specialise in bookkeeping for tradies and small businesses to ensure your finances are managed from start to finish.
@@ -137,10 +133,10 @@ This simply means you will have instant access to your financial information and
                   </li>
                 </ul>
 
- <h3>Builders & Tradies - How To Increase Business Cash Flow</h3>
-                 <p>As a business operating in a competitive environment, it’s important to understand the cost drivers that impact your cash flow, some cost drivers are quantitative in nature others are qualitative.
-<br/>
-Some <b>common areas of struggle for construction businesses are:</b></p>
+  <h4>Builders & Tradies - How To Increase Business Cash Flow</h4>
+                  <p>As a business operating in a competitive environment, it’s important to understand the cost drivers that impact your cash flow, some cost drivers are quantitative in nature others are qualitative.
+  <br/>
+  Some <b>common areas of struggle for construction businesses are:</b></p>
                 <ul>
                   <li>
                     <i className="fi fi-ss-check-circle" />
@@ -163,6 +159,10 @@ Some <b>common areas of struggle for construction businesses are:</b></p>
                   <b>Technology:</b> Having a streamlined system that allows you to invoice before you leave the job site means you can get paid quicker. We can assist you with the appropriate business automation;
                   </li>
                 </ul>
+
+                <h4>How We Help Small & Local Businesses</h4>
+
+                <p>It’s not magic, every business has its unique cost drivers that impact its cash flow. Our <b>Sydney Based Expert Tradies & Small Business Accountants and Tax Specialists</b> who worked with developers, builders, architects, engineers, and many other tradies have over time developed and adopted strategies that helped businesses trace costs to the relevant cost driver for example the cost driver of labour cost is labour hours.</p>
                
               </div>
             

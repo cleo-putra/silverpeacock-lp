@@ -26,7 +26,7 @@ const Footer1 = () => {
           {/* Footer About  */}
           <div className="bx-footer__widget bx-footer__about">
             <Link href="/">
-              <img style={{width: 200, height: 55}} src="assets/images/SP-logo white.png" alt="logo" />
+              <img style={{width: 200, height: 55}} src="assets/images/SP-Logo white.png" alt="logo" />
             </Link>
             <h3 className="title">
               We develop all solutions for the finance future

@@ -46,25 +46,25 @@ const Nav = () => {
           </a>
           <ul className="sub-menu">
             <li>
-              <Link href="service">Service</Link>
+              <Link href="services">Service</Link>
             </li>
             <li>
-              <Link href="service-details">Accounting for Tradies</Link>
+              <Link href="accounting">Accounting for Tradies</Link>
             </li>
             <li>
-              <Link href="service-details">Bookkeeping for Tradies</Link>
+              <Link href="bookkeeping">Bookkeeping for Tradies</Link>
             </li>
             <li>
-              <Link href="service-details">Taxation for Tradies</Link>
+              <Link href="taxation">Taxation for Tradies</Link>
             </li>
             <li>
-              <Link href="service-details">Tax Return</Link>
+              <Link href="tax-returns">Tax Return</Link>
             </li>
             <li>
-              <Link href="service-details">Payroll</Link>
+              <Link href="payroll">Payroll</Link>
             </li>
             <li>
-              <Link href="service-details">Compliance for Tradies</Link>
+              <Link href="compliance">Compliance for Tradies</Link>
             </li>
             
           </ul>
@@ -121,7 +121,7 @@ const Nav = () => {
           </ul>
         </li> */}
         <li>
-          <Link href="contact">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </nav>
@@ -166,7 +166,7 @@ const MobileMenu = ({ show, setShow }) => {
         {/* Mobile Menu Logo */}
         <div className="offcanvas-logo">
           <Link href="/">
-            <img src="assets/images/SP-logo.png" alt="logo" />
+            <img src="assets/images/SP-Logo.png" alt="logo" />
           </Link>
         </div>
         <button
@@ -373,7 +373,7 @@ const Header2 = ({ show, setShow }) => {
               {/* Logo  */}
               <div className="">
                 <Link href="/">
-                  <img style={{width: 220, height: 70}} src="assets/images/SP-logo.png" alt="black-logo" />
+                  <img style={{width: 220, height: 70}} src="assets/images/SP-Logo.png" alt="black-logo" />
                 </Link>
               </div>
               <div className="bx-header__right d-flex">

@@ -236,7 +236,7 @@ export const CTA5 = () => {
   return (
     <section className="bx-call-action section-gap z-index2">
       <div className="container bx-container">
-        <div className="bx-call-action__shapes">
+        {/* <div className="bx-call-action__shapes">
           <img
             className="shape-1 spinner-ani"
             src="assets/images/icons/color-small-star-2.svg"
@@ -247,19 +247,20 @@ export const CTA5 = () => {
             src="assets/images/icons/color-small-plane.svg"
             alt="color-small-plane"
           />
-        </div>
+        </div> */}
         <div className="row justify-content-center">
           <div className="col-lg-10 col-xl-6 col-12">
             <div className="bx-call-action__content text-center">
-              <span className="sm-title">Start With Us</span>
+              <span className="sm-title">
+Are you looking for someone to help?
+</span>
               <h3 className="title has_word_anim">
-                Ready to Transform Your Ideas into Reality? Let’s Begin Your
-                <br />
-                Project Together
+                
+Let us help you! Call Now : <br/>1800 983 448
               </h3>
               <div className="bx-call-action__btn wow fadeInUp">
                 <Link href="/contact" className="bx-btn">
-                  Start Your Project
+                  Free Consultation
                   <i className="fi-rr-arrow-right" />
                 </Link>
               
