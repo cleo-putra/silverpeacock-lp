@@ -88,7 +88,7 @@ export const WhyChooseUs1 = () => {
       </section>
       {/* End Why Choose Area */}
       {/* Start Video Area */}
-      <div className="bx-video bx-hobble">
+      {/* <div className="bx-video bx-hobble">
         <div className="container bx-container">
           <div
             className="bx-video__body position-relative wow fadeInUp"
@@ -108,10 +108,10 @@ export const WhyChooseUs1 = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Video Area */}
       {/* Start Partner Area */}
-      <div className="bx-partner section-gap">
+      {/* <div className="bx-partner section-gap"> */}
         {/* <div className="container bx-container">
           <div className="bx-partner__section-head">
             <h3 className="title has_word_anim">
@@ -121,7 +121,7 @@ export const WhyChooseUs1 = () => {
           </div>
           <Partner1 />
         </div> */}
-      </div>
+      {/* </div> */}
       {/* End Partner Area */}
     </div>
   );

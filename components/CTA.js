@@ -92,9 +92,10 @@ export const CTA3 = () => {
           alt="white-plane"
         />
         <div className="bx-call-action__inner">
-          <div className="bx-call-action__img">
+          <div className="bx-call-action__img" >
             <img
-              src="assets/images/main-home/call-action/call-action-img.png"
+              src="/assets/images/sp/contact-bg.webp"
+          style={{marginBottom: "120px"}}
               alt="call-action-img"
             />
           </div>
@@ -104,7 +105,7 @@ export const CTA3 = () => {
               <span className="bx-literata"> Ready to Simplify Your Accounting and Tax Matters?</span>
             </h3>
             <p className="text wow fadeInUp" data-wow-delay=".3s">
-              At Silver Peacock, we provide clear, reliable accounting and tax advice for individuals and small businesses. From bookkeeping to compliance and tax returns, our experts ensure your finances stay accurate, compliant, and stress-free.
+              At Silver Peacock, we provide clear, reliable accounting and tax advice for individuals and small businesses. From bookkeeping to compliance and tax returns, our experts ensure your finances stay accurate and stress-free.
             </p>
             <div
               className="bx-call-action_btn wow fadeInUp"

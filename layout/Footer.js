@@ -17,9 +17,7 @@ const Footer1 = () => {
   return (
     <footer
       className="bx-footer background-image position-relative"
-      style={{
-        backgroundImage: 'url("assets/images/main-home/footer/footer-bg.png")',
-      }}
+      
     >
       <div className="container bx-container">
         <div className="bx-footer__main">

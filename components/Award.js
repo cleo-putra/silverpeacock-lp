@@ -15,74 +15,119 @@ export const Award1 = () => {
         alt="section-arrow"
       />
       <div className="container bx-container">
-        <div className="bx-award__grid">
-          {/* Award Image  */}
+  <div
+    className="bx-award__grid"
+    style={{
+      display: "grid",
+      gridTemplateColumns: "40% 60%",
+      gap: "40px",
+      alignItems: "center",
+
+      /* Mobile view override */
+      ...(typeof window !== "undefined" &&
+        window.innerWidth < 768 && {
+          gridTemplateColumns: "1fr",
+        }),
+    }}
+  >
+    {/* LEFT COLUMN (40%) */}
+    
+
+     <div
+        className="bx-video__body position-relative wow fadeInUp"
+        data-wow-delay=".3s"
+      >
+        <div className="bx-video__img">
+          <img
+            src="/assets/images/sp/contact-bg.webp"
+            alt="video-img"
+          />
+        </div>
+        <a
+          href="https://vimeo.com/417886334"
+          className="bx-video__btn popup-video bx-hover-layer-2"
+        >
+          <i className="fi fi-sr-play" />
+        </a>
+      </div>
+
+    {/* RIGHT COLUMN (60%) */}
+    <div className="bx-award__grid-second" style={{ width: "100%" }}>
+      {/* Award Description */}
+      <div className="bx-award__desc">
+        <h3 className="title has_word_anim">
+          <span className="bx-literata"></span> Recognised Excellence in Accounting and Tax Advisory
+        </h3>
+        <p className="text wow fadeInUp" data-wow-delay=".3s">
+          At Silver Peacock, our commitment to precision, integrity, and client success
+          has earned us recognition across Australia. We’re proud recipients of the
+          Local Business Awards – City Suburbs Winner and the Australian Small Business
+          Champion Awards 2022.
+        </p>
+      </div>
+
+      <div className="bx-award__medal" style={{ marginTop: "20px" }}>
+        {/* Medal Images */}
+        <div className="bx-award__medal-img wow fadeInUp" data-wow-delay=".3s">
+          <img
+            src="assets/images/sp/sp-award.jpg"
+            alt="award-img-2"
+            style={{
+              width: "194px",
+              height: "250px",
+            }}
+          />
+        </div>
+         <div className="bx-award__medal-img wow fadeInUp" data-wow-delay=".3s">
+          <img
+            src="assets/images/sp/sp-champ.jpg"
+            alt="award-img-2"
+            style={{
+              width: "127px",
+              height: "250px",
+            }}
+          />
+        </div>
+
+        {/* Medal Content */}
+        <div className="bx-award__medal-content" style={{ marginTop: "15px" }}>
+          <p className="text wow fadeInRight" data-wow-delay=".5s">
+            These achievements reflect our dedication to providing trusted accounting
+            and taxation services that deliver real results for individuals and small
+            businesses alike.
+          </p>
+
           <div
-            className="bx-award__grid-first wow fadeInUp"
+            className="bx-award__medal-list wow fadeInRight"
             data-wow-delay=".3s"
+            style={{ marginTop: "10px" }}
           >
-            <img
-              src="assets/images/main-home/award/award-img-1.png"
-              alt="award-img-1"
-            />
-          </div>
-          <div className="bx-award__grid-second">
-            {/* Award Desciption  */}
-            <div className="bx-award__desc">
-              <h3 className="title has_word_anim">
-                <span className="bx-literata"></span> Recognised Excellence in Accounting and Tax Advisory
-              </h3>
-              <p className="text wow fadeInUp" data-wow-delay=".3s">
-                At Silver Peacock, our commitment to precision, integrity, and client success has earned us recognition across Australia. We’re proud recipients of the Local Business Awards – City Suburbs Winner and the Australian Small Business Champion Awards 2022.
-              </p>
-            </div>
-            <div className="bx-award__medal">
-              {/* Medal Images  */}
-              <div
-                className="bx-award__medal-img wow fadeInUp"
-                data-wow-delay=".3s"
-              >
+            <h5 className="title">Award Winning!</h5>
+
+            <div
+              className="bx-award__medal-icons"
+              style={{
+                display: "flex",
+                gap: "10px",
+                flexWrap: "wrap",
+                marginTop: "8px",
+              }}
+            >
+              {awards.map((award, index) => (
                 <img
-                  src="assets/images/main-home/award/award-img-2.png"
-                  alt="award-img-2"
+                  key={index}
+                  src={award}
+                  alt="medal-icon"
+                  style={{ width: "50px", height: "auto" }}
                 />
-              </div>
-              {/* Medal Content  */}
-              <div className="bx-award__medal-content">
-                <p className="text wow fadeInRight" data-wow-delay=".5s">
-                  These achievements reflect our dedication to providing trusted accounting and taxation services that deliver real results for individuals and small businesses alike.
-                </p>
-                <div
-                  className="bx-award__medal-list wow fadeInRight"
-                  data-wow-delay=".3s"
-                >
-                  <h5 className="title">Award Wining!</h5>
-                  <div className="bx-award__medal-icons">
-                    {awards.map((award, index) => (
-                      <img src={award} alt="medal-icon" key={index} />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              {/* Experience Card  */}
-              <div
-                className="bx-award__experience wow fadeInUp"
-                data-wow-delay=".3s"
-              >
-                <img
-                  className="icon"
-                  src="assets/images/icons/white-brand.png"
-                  alt="white-brand"
-                />
-                <h4 className="title">
-                  <Counter value={10} />+
-                </h4>
-                <p className="text">Years of experience since at 2015</p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
     </section>
   );
 };

@@ -57,7 +57,7 @@ export const Testimonial1 = ({
       id: 6,
       image: "/assets/images/main-home/testimonial/img-1.png",
       name: "Simone R",
-      designation: "INSIGHT ELECTRICAL AND COMMUNICATION Pty Ltd",
+      designation: "INSIGHT ELECTRICAL AND COMMUNICATION",
       text: "Silver Peacock helped me structured my company and protected my assets. Now I’m operating multiple companies in the construction industry. Thanks to the team at Silver Peacock who take the time to explain things clearly and discuss options for keeping my tax to a minimum.",
       reviews: "365%",
       reviewsText: "Increase in customer growth rate",
@@ -72,15 +72,7 @@ export const Testimonial1 = ({
       reviewsText: "Increase in customer growth rate",
     },
     
-    {
-      id: 8,
-      image: "/assets/images/main-home/testimonial/img-1.png",
-      name: "Tamer E",
-      designation: "SYDNEY SHUTTLE Pty Ltd",
-      text: "I initially operated a small business in this industry, but after investing a lot of time with Silver Peacock discussing business automation options so I can streamline my operations, my business has grown and I have recently bought out one of my competitors in the industry. Silver Peacock helped me with all the strategies to take over the business.",
-      reviews: "365%",
-      reviewsText: "Increase in customer growth rate",
-    },
+   
   ];
   return (
     <section
@@ -104,27 +96,54 @@ export const Testimonial1 = ({
             </div>
           </div>
         </div>
-        <Swiper
-          {...sliderProps.testimonial__slider}
-          className=" bx-testimonial__slider"
+    <Swiper
+  {...sliderProps.testimonial__slider}
+  className="bx-testimonial__slider"
+>
+  {testimonials.map((testimonial) => (
+    <SwiperSlide
+      className="swiper-slide"
+      key={testimonial.id}
+      style={{ height: "auto" }}
+    >
+      <div
+        className="bx-testimonial__item"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          height: "100%",
+          minHeight: "400px", // adjust height you want
+          padding: "30px",
+          borderRadius: "14px",
+          background: "#fff",
+          boxShadow: "0 2px 10px rgba(0,0,0,0.06)",
+        }}
+      >
+        {/* Top Content */}
+        <div style={{ flexGrow: 1 }}>
+          <p className="text">{testimonial.text}</p>
+        </div>
+
+        {/* Bottom (Name + Designation) */}
+        <div
+          className="bx-testimonial__info"
+          style={{
+            marginTop: "20px",
+            paddingTop: "10px",
+            borderTop: "1px solid #e5e5e5",
+          }}
         >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide className="swiper-slide" key={testimonial.id}>
-              {/* Single Slider */}
-              <div className="bx-testimonial__item">
-                
-                <div className="bx-testimonial__content">
-                  <p className="text">{testimonial.text}</p>
-                  <div className="bx-testimonial__info">
-                    <h4 className="name">{testimonial.name}</h4>
-                    <p className="designation">{testimonial.designation}</p>
-                  </div>
-                </div>
-               
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          <h4 className="name" style={{ marginBottom: "4px" }}>
+            {testimonial.name}
+          </h4>
+          <p className="designation">{testimonial.designation}</p>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
+
       </div>
     </section>
   );

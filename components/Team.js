@@ -26,35 +26,35 @@ export const Team1 = () => {
     
     {
       id: 5,
-      image: "/assets/images/main-home/team/team-5.png",
+      image: "/assets/images/main-home/team/noelle.png",
       name: "Noelle ",
       designation: "Senior Associate & Management Accountant | Foreign Tax Planning",
       delay: ".3s",
     },
     {
       id: 6,
-      image: "/assets/images/main-home/team/team-6.png",
+      image: "/assets/images/main-home/team/mani.webp",
       name: "Mani R.",
       designation: "Senior Associate & Tax Accountant",
       delay: ".5s",
     },
     {
       id: 7,
-      image: "/assets/images/main-home/team/team-7.png",
+      image: "/assets/images/main-home/team/bren.webp",
       name: "Brenalyn W.",
       designation: "Senior Associate & Tax Accountant",
       delay: ".7s",
     },
     {
       id: 8,
-      image: "/assets/images/main-home/team/team-8.png",
+      image: "/assets/images/main-home/team/norika.webp",
       name: "Norika R.",
       designation: "Associate & Tax Accountant",
       delay: ".9s",
     },
      {
       id: 8,
-      image: "/assets/images/main-home/team/team-8.png",
+      image: "/assets/images/main-home/team/rina.webp",
       name: "Rina F.",
       designation: "Management Accountant & Practice Admin Manager",
       delay: ".9s",
@@ -70,12 +70,7 @@ export const Team1 = () => {
               <h3 className="bx-section-head__title has_word_anim">
                 <span className="bx-literata">Partners at </span> Silver Peacock & Co
               </h3>
-              <div className="bx-section-head__btn">
-                <Link href="/team" className="bx-btn">
-                  View All Member
-                  <i className="fi-rr-arrow-right" />
-                </Link>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -88,9 +83,37 @@ export const Team1 = () => {
               key={team.id}
             >
               <div className="bx-team__head">
-                <div className="bx-team__img">
-                  <img src={team.image} alt="team-img" />
-                </div>
+                <div
+  className="bx-team__img"
+  style={{
+    width: "260px",
+    height: "260px",
+    borderRadius: "50%",
+    overflow: "hidden",
+    margin: "0 auto",
+
+    /* Responsive */
+    ...(typeof window !== "undefined" && window.innerWidth <= 992 && {
+      width: "200px",
+      height: "200px",
+    }),
+    ...(typeof window !== "undefined" && window.innerWidth <= 576 && {
+      width: "150px",
+      height: "150px",
+    }),
+  }}
+>
+  <img
+    src={team.image}
+    alt="team-img"
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+    }}
+  />
+</div>
+
                 <ul className="bx-team__social">
                   <li>
                     <a href="https://facebook.com/">
